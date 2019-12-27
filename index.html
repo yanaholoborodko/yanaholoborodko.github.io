@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
 
@@ -18,125 +23,223 @@
     <!-- // Intro -->
     <header id="about">
         <div id="pt" class="canvas"></div>
-        <a href="CV Yana Holoborodko.pdf" class="btn download" download>Download CV as PDF</a>
+        <a href="CV_YanaHoloborodko.pdf" target="_blank" class="btn download" download>Download CV as PDF</a>
         <nav>
-            <a href="#projects">Projects</a>
-            <a href="#work">Work Experience</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#nav"
+                    aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="dark-blue-text">
+                    <i class="fa fa-bars fa-1x"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse d-sm-block" id="nav">
+                <a href="#projects">Projects</a>
+                <a href="#work">Work Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
-        <div class="content-wrap info">
-            <img class="profile-img" src="images/DSC_0213.jpg" alt="Yana Holoborodko picture">
-            <div class="personal-info">
-                <h1>Yana Holoborodko</h1>
-                <h2>Front-End Web Developer</h2>
-                <p>Hello, my name is Yana and I`m passionate about web development :)
-                    I have previous commercial experience in back-end development in Java, but now I
-                    focus on front-end technologies. I can`t wait to become part of development team
-                    and contribute with my skills, personality and passion. My soft skills include fast
-                    learning, creativity, stress-resistance and ability & desire to work in a team.</p>
+        <div class="container content-wrap info">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="profile-img img-fluid" src="images/DSC_0213.jpg" alt="Yana Holoborodko picture">
+                </div>
+                <div class="col-12 col-md-8 personal-info">
+                    <h1 class="mb-2">Yana Holoborodko</h1>
+                    <h2 class="mb-2">Front-End Web Developer</h2>
+                    <p class="descr">Hello, my name is Yana and I`m a passionate frontend developer :) <br/>
+                        My favorite technologies include Vue.js, SCSS, Bootstrap, jQuery and Laravel.
+                        I am open to embracing new technologies needed for work.
+                        I have commercial experience in both front- and backend development.<br/>
+                        In February 2020 I will finish my B.Eng. degree in Computer Science in Lodz,
+                        Poland and will be able to relocate for the on-site work.<br/>
+                        As my nationality is Ukrainian, I will need visa/work permit.</p>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="projects">
-            <div class="content-wrap project">
-                <h2>Projects</h2>
-                <hr align="left">
-                <ul>
-                    <li>
-                        <!-- <h3 class="project-container">Trip to Alps</h3> -->
+        <section id="projects" class="container-fluid">
+            <div class="content-wrap project row">
+                <div class="col-12">
+                    <h2 class="text-center">Work projects</h2>
+                    <hr align="center">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://www.wapteka.pl/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/wp-1.png" class="project-img" alt="wapteka.pl">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://www.fitfabric.pl/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/wp-2.jpg" class="project-img" alt="fitfabric.pl">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://sowiero.pl/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/wp-3.png" class="project-img" alt="sowiero.pl">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://www.babys-zone.com/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/wp-4.jpg" class="project-img" alt="babys-zone.com">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://www.apteka-melissa.pl/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/wp-5.jpg" class="project-img" alt="apteka-melissa.pl">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="http://jwhlodz.pl/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/wp-6.jpg" class="project-img" alt="jwhlodz.pl">
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrap project row">
+                <div class="col-12">
+                    <h2 class="text-center">Personal projects</h2>
+                    <hr align="center">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
                         <a href="https://yanaholoborodko.github.io/TripToAlps/" class="portfolio-link" target="_blank">
                             <i class="fas fa-external-link-alt fa-2x"></i>
                         </a>
-                        <img src="images/project1.png" class="project-img" alt="website project trip to alps">
-                    </li>
-                    <li>
-                            <!-- <h3 class="project-container">Trip to Alps</h3> -->
-                            <a href="https://yanaholoborodko.github.io/TattooSalonWebsite/" class="portfolio-link" target="_blank">
-                                <i class="fas fa-external-link-alt fa-2x"></i>
-                            </a>
-                            <img src="images/project2.png" class="project-img" alt="website project tattoo salon">
-                    </li>
-                    <li>
-                            <a href="https://yanaholoborodko.github.io/StartupWebsite/" class="portfolio-link" target="_blank">
-                                <i class="fas fa-external-link-alt fa-2x"></i>
-                            </a>
-                            <img src="images/project3.png" class="project-img" alt="website project for startup">
-                    </li>
-                    <li>
-                            <a href="https://yanaholoborodko.github.io/SportWebsite/" class="portfolio-link" target="_blank">
-                                <i class="fas fa-external-link-alt fa-2x"></i>
-                            </a>
-                            <img src="images/project4.png" class="project-img" alt="website project for fitness company">
-                    </li>
-                    <li>
-                            <a href="https://yanaholoborodko.github.io/TypingSpeedTest/" class="portfolio-link" target="_blank">
-                                <i class="fas fa-external-link-alt fa-2x"></i>
-                            </a>
-                            <img src="images/project5.png" class="project-img" alt="website project for checking typing speed">
-                    </li>
-                    <li>
-                            <a href="https://yanaholoborodko.github.io/JavaScript-clock/" class="portfolio-link" target="_blank">
-                                <i class="fas fa-external-link-alt fa-2x"></i>
-                            </a>
-                            <img src="images/project6.png" class="project-img" alt="analog clock javascript">
-                    </li>
-                </ul>
-
+                        <img src="images/pp-1.png" class="project-img" alt="website project trip to alps">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://yanaholoborodko.github.io/TattooSalonWebsite/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/pp-2.jpg" class="project-img" alt="website project tattoo salon">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://yanaholoborodko.github.io/StartupWebsite/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/pp-3.jpg" class="project-img" alt="website project for startup">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://yanaholoborodko.github.io/SportWebsite/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/pp-4.jpg" class="project-img" alt="website project for fitness company">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://yanaholoborodko.github.io/TypingSpeedTest/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/pp-5.png" class="project-img" alt="website project for checking typing speed">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 px-0 px-sm-2">
+                    <div class="position-relative">
+                        <a href="https://yanaholoborodko.github.io/JavaScript-clock/" class="portfolio-link" target="_blank">
+                            <i class="fas fa-external-link-alt fa-2x"></i>
+                        </a>
+                        <img src="images/pp-6.png" class="project-img" alt="analog clock javascript">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- // Work Experience -->
         <section id="work" class="work">
-            <div class="content-wrap">
-                <h2>Work Experience</h2>
-                <hr align="left">
-                <!-- Job 1 Details -->
-                <div class="col-narrow">
-                    <h3>Java Junior Developer</h3>
-                    <p class="uppercase">Asseco Data Systems</p>
-                    <p>07/2017 - 12/2018</p>
+            <div class="content-wrap container">
+                <h2 class="text-center">Work Experience</h2>
+                <hr align="center">
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h3>Frontend Developer</h3>
+                        <p class="uppercase">dotandspot.pl</p>
+                        <p>10/2018 - currently</p>
+                    </div>
+
+                    <div class="col-12 col-md-8 job-description">
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>Leading frontend developer in most company`s projects.</li>
+                            <li>Production, modification and maintenance of e-commerce websites (on Laravel / Laravel + Vue.js)</li>
+                            <li>Designing and implementing responsive design for new and existing projects using Bootstrap</li>
+                            <li>Maintaining and improving existing websites.</li>
+                        </ul>
+                        <p><a href="#projects">See recent projects</a></p>
+                    </div>
                 </div>
 
-                <div class="col-wide job-description">
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>Designing, implementing and testing code to deliver business solutions in
-                            Java and JEE applications</li>
-                        <li>Maintaining existing applications</li>
-                        <li>Creating and testing prototype solutions</li>
-                        <li>Keeping documentation related to the project</li>
-                        <li>Fixing bugs</li>
-                    </ul>
-                    <p>Achievements:</p>
-                    <ul>
-                        <li>Implementation of new features into existing project</li>
-                        <li>Learning to write clean and quality code</li>
-                    </ul>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h3>Java Junior Developer</h3>
+                        <p class="uppercase">Asseco Data Systems</p>
+                        <p>07/2017 - 12/2018</p>
+                    </div>
+
+                    <div class="col-12 col-md-8 job-description">
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>Designing, implementing and testing code to deliver business solutions in
+                                Java and JEE applications</li>
+                            <li>Maintaining existing applications</li>
+                            <li>Creating and testing prototype solutions</li>
+                            <li>Keeping documentation related to the project</li>
+                            <li>Fixing bugs</li>
+                        </ul>
+                        <p>Projects: project for City of Lodz Office for transferring all paperwork
+                            to e-system and its multiple subprojects (e.g. Waste Management, HR Management etc.)</p>
+                    </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h3>Freelance Translator</h3>
+                        <p class="uppercase">NGO “Foundation.101”</p>
+                        <p>11/2015-12/2016</p>
+                    </div>
 
-                <!-- Job 2 Details -->
-                <div class="col-narrow">
-                    <h3>Freelance Translator</h3>
-                    <p class="uppercase">NGO “Foundation.101”</p>
-                    <p>11/2015-12/2016</p>
+                    <div class="col-12 col-md-8 job-description">
+                        <p>Responsibilities::</p>
+                        <ul>
+                            <li>Translating news and articles in language pair Ukrainian - English</li>
+                            <li>Translating news and articles in language pair Russian - English</li>
+                            <li>Editing articles and news in English.</li>
+                        </ul>
+                        <p>Achievements:</p>
+                        <ul>
+                            <li>Translated more than 100 articles and news</li>
+                        </ul>
+
+                    </div>
                 </div>
 
-                <div class="col-wide job-description">
-                    <p>Responsibilities::</p>
-                    <ul>
-                        <li>Translating news and articles in language pair Ukrainian - English</li>
-                        <li>Translating news and articles in language pair Russian - English</li>
-                        <li>Editing articles and news in English.</li>
-                    </ul>
-                    <p>Achievements:</p>
-                    <ul>
-                        <li>Translated more than 100 articles and news</li>
-                    </ul>
-
-                </div>
                 <p> See more complete history on <a href="https://www.linkedin.com/in/yana-holoborodko/">LinkedIn</a>
                 </p>
             </div>
@@ -144,25 +247,32 @@
 
 
         <!-- // Education -->
-        <section id="education" class="education">
-            <div class="content-wrap">
-                <h2>Education</h2>
-                <hr align="left">
-                <!-- School details: copy this whole block to add more schools. -->
-                <h3>University of Computer Science and Skills (Lodz, Poland)</h3>
+        <section id="education">
+            <div class="container">
+                <div class="content-wrap row">
+                    <div class="col-12">
+                        <h2 class="text-center">Education</h2>
+                        <hr align="center">
+                        <div class="mb-3">
+                            <h3>University of Computer Science and Skills (Lodz, Poland)</h3>
 
-                <!-- Add as many paragraphs as you need. -->
-                <p>Bachelor’s degree, 2016 –2020</p>
-                <p>Specialization: Programming</p>
-                <p>Currently on the 3rd year of studies</p>
-                <!-- End of school details. -->
+                            <div><b>Bachelor of Engineering degree</b></div>
+                            <div>October 2016 – February 2020</div>
+                            <div>Specialization: <b>Computer Science</b></div>
+                            <div>Currently on the 4th year of studies (final)</div>
+                            <small>P.S. Bachelor of Engineering degree is 3,5 years in Poland.</small>
+                            <small> Therefore, I will finish my studies and will have diploma in the end of February 2020</small>
+                        </div>
 
+                        <div>
+                            <h3>Liceum 4 (Kremenchuk, Ukraine)</h3>
 
-                <h3>Liceum 4 (Kremenchuk, Ukraine)</h3>
-
-                <p>High School diploma</p>
-                <p>Specialization: Math & Physics</p>
-                <p>Finished with the golden medal.</p>
+                            <div>High School diploma</div>
+                            <div>Specialization: Math & Physics</div>
+                            <div>Finished with the golden medal.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -179,7 +289,7 @@
                 <a href="https://www.linkedin.com/in/yana-holoborodko/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
 
-            <p id="copyright">Copyright 2018 by Yana Holoborodko</p>
+            <p id="copyright">Copyright 2019 by Yana Holoborodko</p>
         </div>
     </footer>
     <script src="scripts/canvas.js"></script>
